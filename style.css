@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, black, #d7d2d2);
+  }
+  .container {
+    padding: 20px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .nav .active {
+    color: white;
+    font-weight: bold;
+  }
+  .search_box {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    background: #222;
+    color: white;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .hero_content {
+    max-width: 40%;
+  }
+  .rating {
+    margin: 10px 0;
+  }
+  .watch_btn {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .hero_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero_image img {
+    max-height: 300px;
+    border-radius: 20px;
+  }
+  .thumbnails {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  .thumbnails img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #111;
+    transition: transform 0.3s ease;
+  }
+  .thumbnails img:hover {
+    transform: scale(1.05);
+  }
+  .footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-links a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
