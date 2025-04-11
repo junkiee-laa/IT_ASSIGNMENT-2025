@@ -15,6 +15,14 @@
             align-items: center;
             font-family: Arial, sans-serif;    
         }
+        .wrapper {
+            max-width: 1320px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .login_page{
             background: linear-gradient(to bottom, black, #f1ebeb);
             padding: 40px 20px;
@@ -86,13 +94,14 @@
     </script>
 </head>
 <body>
-    <div class="login_page">
-        <label for="username" class="U_text">Username</label><br><br>
-        <input type="text"id="username" placeholder="Enter username" name="username">
-        <lable for="password">Password</lable>
-        <input type="password" id="password" placeholder="Enter password" name="password">
-        <button type="submit" onclick="return validateForm()">Log-in</button><br><br>
-        <button type="submit" onclick="signin()">Sign-in</button>
+    <div class="wrapper">
+        <div class="login_page">
+            <label for="username" class="U_text">Username</label><br><br>
+            <input type="text"id="username" placeholder="Enter username" name="username">
+            <lable for="password">Password</lable>
+            <input type="password" id="password" placeholder="Enter password" name="password">
+            <button type="submit" onclick="return validateForm()">Log-in</button><br><br>
+            <button type="submit" onclick="signin()">Sign-in</button>
         </div>
     </div>
 </body>
